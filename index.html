@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net" rel="stylesheet">
+    <style>
+        section { padding: 60px 0; }
+        .hero-section { background: #f8f9fa; padding: 100px 0; }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">MY PORTFOLIO</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Hi, I'm [Your Name]</h1>
+            <p class="lead">A passionate developer building sleek, responsive web experiences.</p>
+            <a href="#projects" class="btn btn-primary btn-lg">View My Work</a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6 text-center">
+                <img src="https://via.placeholder.com" class="img-fluid rounded-circle shadow" alt="Profile">
+            </div>
+            <div class="col-md-6">
+                <h2 class="fw-bold">About Me</h2>
+                <p>I am a web developer specializing in Bootstrap and modern frontend frameworks. I love solving problems and turning complex ideas into simple, beautiful designs.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="bg-light">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-5">My Projects</h2>
+            <div class="row g-4">
+                <!-- Card 1 -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://via.placeholder.comx200" class="card-img-top" alt="Project 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Project One</h5>
+                            <p class="card-text">A brief description of this awesome project and the tech used.</p>
+                            <a href="#" class="btn btn-outline-primary btn-sm">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://via.placeholder.comx200" class="card-img-top" alt="Project 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Project Two</h5>
+                            <p class="card-text">A brief description of this awesome project and the tech used.</p>
+                            <a href="#" class="btn btn-outline-primary btn-sm">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://via.placeholder.comx200" class="card-img-top" alt="Project 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Project Three</h5>
+                            <p class="card-text">A brief description of this awesome project and the tech used.</p>
+                            <a href="#" class="btn btn-outline-primary btn-sm">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <h2 class="fw-bold text-center mb-4">Contact Me</h2>
+                <form>
+                    <div class="mb-3">
+                        <label class="form-label">Name</label>
+                        <input type="text" class="form-control" placeholder="Your Name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Email</label>
+                        <input type="email" class="form-control" placeholder="name@example.com" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Message</label>
+                        <textarea class="form-control" rows="4" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <p class="mb-0">&copy; 2024 [Your Name]. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net"></script>
+</body>
+</html>

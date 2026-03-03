@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My info</title>
+<link rel="stylesheet" href="style.css">
+<style>
+        .profile-img-placeholder {
+            width: 100%;
+            height: auto;
+            background-color: #ddd;
+            display: block;
+            /* Optional: Add a class for rounded images if using Bootstrap 5 */
+            /* border-radius: .5rem; */
+        }
+    </style>
+</head>
+<body>
+   <header>
+    <nav class="navbar">
+        <a href="#" class="nav-logo">MyLogo</a>
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+            <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+            <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+        </div>
+    </nav>
+</header>
+ <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Welcome to my Website</h1>
+            <p class="hero-bio">A short, concise description of our services and mission. We help you achieve your goals with innovative solutions.</p>
+            <a href="#" class="hero-button">Get in touch</a>
+        </div>
+    </section>
+     <div class="container mt-5">
+        <div class="row align-items-center">
+            <!-- Column for Profile Image (takes 4 of 12 grid columns on medium screens and up) -->
+            <div class="col-md-4 mb-3 mb-md-0">
+                <img src="shatty.jpg" alt="Profile Placeholder Image" wi class="img-fluid rounded profile-img-placeholder">
+            </div>
+            
+            <!-- Column for Short Paragraph (takes 8 of 12 grid columns on medium screens and up) -->
+            <div class="col-md-8">
+                <h1>Hello, I'm nakalembe shatrah</h1>
+                <p>
+                    Welcome to my profile. I am a web developer with a passion for creating responsive and user-friendly websites. 
+                </p>
+            </div>
+        </div>
+    </div>
+      <div class="container mt-5">
+        <h1 class="mb-4">Project Portfolio</h1>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            
+            <!-- Card 1 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://via.placeholder.com" class="card-img-top" alt="Project One Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Project One</h5>
+                        <p class="card-text">A brief description of the first project. This text can be customized to fit your specific content needs.</p>
+                        <a href="#" class="btn btn-primary">View Project</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://via.placeholder.com" class="card-img-top" alt="Project Two Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Project Two</h5>
+                        <p class="card-text">This is the second project description. Cards are built with flexbox and offer easy alignment.</p>
+                        <a href="#" class="btn btn-primary">View Project</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://via.placeholder.com" class="card-img-top" alt="Project Three Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Project Three</h5>
+                        <p class="card-text">The final project. You can mix and match content types to create the card you need using classes like `.card-title` and `.card-text`.</p>
+                        <a href="#" class="btn btn-primary">View Project</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+     <div class="form-container">
+        <form class="contact-form">
+            <h2>Contact Us</h2>
+            <label>Name: <input type="text" name="name" required></label><br><br>
+            <label>Email: <input type="email" name="email" required></label><br><br>
+            <label>Message: <textarea name="message" rows="5"></textarea></label><br><br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <footer>
+        <p>&copy; 2026 nakalembe shatrah. All rights reserved.</p>
+    </footer>
+</body>
+</html>
