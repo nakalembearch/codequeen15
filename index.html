@@ -1,130 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio</title>
-    <!-- Bootstrap 5 CSS -->
-    <link href="https://cdn.jsdelivr.net" rel="stylesheet">
+<html>
+    <Head>
+        <title>MY PROFILE</title>
+    </Head>
     <style>
-        section { padding: 60px 0; }
-        .hero-section { background: #f8f9fa; padding: 100px 0; }
+        table, th, td {
+border: 1px solid black;
+border-collapse: collapse;
+padding: 10px;
+        }
     </style>
-</head>
-<body>
+    <Body>
+        <p>Iam <b><i>Nakalembe shatrah</i></b> persuing a degree in interior architecture at limkokwing university mukono</p>
+        <p>Code queen is a community helping out ladies mostly to lear coding that i got to know from a friend via wasup</p><br>
+        <h2>DISLIKES</h2>
+<ul>
+  <li>critism</li>
+  <li>mockery</li>
+  <li>failure</li>
+</ul>
+<H2> LIKES</H2>
+<ol>
+  <li>learning new things</li>
+  <li>making friends</li>
+  <li>adventure</li>
+</ol>
+<img src="shatty.jpg" hieght="300" width="120" alt="my image" title="Definition of beauty" >
+<table>
+    <caption>CONTACT</caption>
+    
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-        <div class="container">
-            <a class="navbar-brand fw-bold" href="#">MY PORTFOLIO</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <tr bgcolor="grey" width style="color: white;">
+        <th>Name </th>
+        <th>Phone</th>
+        <th>Email</th>
+        <th>Gender</th>
+        <th>Location</th>
 
-    <!-- Hero Section -->
-    <header id="home" class="hero-section text-center">
-        <div class="container">
-            <h1 class="display-4 fw-bold">Hi, I'm [Your Name]</h1>
-            <p class="lead">A passionate developer building sleek, responsive web experiences.</p>
-            <a href="#projects" class="btn btn-primary btn-lg">View My Work</a>
-        </div>
-    </header>
+    </tr>
 
-    <!-- About Section -->
-    <section id="about" class="container">
-        <div class="row align-items-center">
-            <div class="col-md-6 text-center">
-                <img src="https://via.placeholder.com" class="img-fluid rounded-circle shadow" alt="Profile">
-            </div>
-            <div class="col-md-6">
-                <h2 class="fw-bold">About Me</h2>
-                <p>I am a web developer specializing in Bootstrap and modern frontend frameworks. I love solving problems and turning complex ideas into simple, beautiful designs.</p>
-            </div>
-        </div>
-    </section>
+    <tr>
+        <td>Nakalembe shatrah</td>
+        <td>071818963</td>
+        <td>nakalembeshatrah@gmail.com</td>
+        <td>Female</td>
+        <td>gayaza</td>
+    </tr> 
+</table>  
+    </Body>
+    <script src="JS.js"></script>
 
-    <!-- Projects Section -->
-    <section id="projects" class="bg-light">
-        <div class="container text-center">
-            <h2 class="fw-bold mb-5">My Projects</h2>
-            <div class="row g-4">
-                <!-- Card 1 -->
-                <div class="col-md-4">
-                    <div class="card h-100 shadow-sm">
-                        <img src="https://via.placeholder.comx200" class="card-img-top" alt="Project 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Project One</h5>
-                            <p class="card-text">A brief description of this awesome project and the tech used.</p>
-                            <a href="#" class="btn btn-outline-primary btn-sm">View Project</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Card 2 -->
-                <div class="col-md-4">
-                    <div class="card h-100 shadow-sm">
-                        <img src="https://via.placeholder.comx200" class="card-img-top" alt="Project 2">
-                        <div class="card-body">
-                            <h5 class="card-title">Project Two</h5>
-                            <p class="card-text">A brief description of this awesome project and the tech used.</p>
-                            <a href="#" class="btn btn-outline-primary btn-sm">View Project</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Card 3 -->
-                <div class="col-md-4">
-                    <div class="card h-100 shadow-sm">
-                        <img src="https://via.placeholder.comx200" class="card-img-top" alt="Project 3">
-                        <div class="card-body">
-                            <h5 class="card-title">Project Three</h5>
-                            <p class="card-text">A brief description of this awesome project and the tech used.</p>
-                            <a href="#" class="btn btn-outline-primary btn-sm">View Project</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-6">
-                <h2 class="fw-bold text-center mb-4">Contact Me</h2>
-                <form>
-                    <div class="mb-3">
-                        <label class="form-label">Name</label>
-                        <input type="text" class="form-control" placeholder="Your Name" required>
-                    </div>
-                    <div class="mb-3">
-                        <label class="form-label">Email</label>
-                        <input type="email" class="form-control" placeholder="name@example.com" required>
-                    </div>
-                    <div class="mb-3">
-                        <label class="form-label">Message</label>
-                        <textarea class="form-control" rows="4" placeholder="Your Message" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary w-100">Send Message</button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-4">
-        <p class="mb-0">&copy; 2024 [Your Name]. All Rights Reserved.</p>
-    </footer>
-
-    <!-- Bootstrap 5 JS Bundle -->
-    <script src="https://cdn.jsdelivr.net"></script>
-</body>
 </html>
