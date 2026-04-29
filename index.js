@@ -77,7 +77,7 @@ if (condition1) {
 }
 
 
-alert(typeof console);
+
 
 let mark = 79;
 if(mark > 69) {
@@ -251,9 +251,7 @@ while(id2 > 7){
     id2++;
 }
 
-let password = "";
-while(password !== "1234"){
-    password = prompt("please enter the correct password:");
+
 }
 //DO WHILE
 //do{
