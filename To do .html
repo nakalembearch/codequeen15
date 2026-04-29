@@ -377,7 +377,7 @@
 
 <!-- HEADER -->
 <header>
-  <div class="logo">✓ TaskFlow</div>
+  <div class="logo">✓ TO DO</div>
   <div class="header-stats">
     <div>Total: <span id="stat-total">0</span></div>
     <div>Done: <span id="stat-done">0</span></div>
@@ -397,15 +397,15 @@
     </div>
     <div class="meta-row">
       <select class="meta-select" id="task-category">
-        <option value="work">💼 Work</option>
-        <option value="personal">🏠 Personal</option>
-        <option value="health">💪 Health</option>
-        <option value="other">📌 Other</option>
+        <option value="work"> Work</option>
+        <option value="personal"> Personal</option>
+        <option value="health"> Health</option>
+        <option value="other"> Other</option>
       </select>
       <select class="meta-select" id="task-priority">
-        <option value="medium">🟡 Medium</option>
-        <option value="high">🔴 High</option>
-        <option value="low">🟢 Low</option>
+        <option value="medium"> Medium</option>
+        <option value="high"> High</option>
+        <option value="low"> Low</option>
       </select>
       <input class="meta-date" id="task-due" type="date" title="Due date" />
     </div>
@@ -421,14 +421,16 @@
       <div class="progress-bar-fill" id="progress-fill" style="width:0%"></div>
     </div>
   </div>
+  <!--fetch tasks from fake APIs-->
+  <button id="fetchData" style="margin-bottom: 20 px;background-color: #10b981;">Fetch External Tasks</button>
 
   <!-- FILTERS -->
   <div class="filters">
     <button class="filter-btn active" data-filter="all">All</button>
     <button class="filter-btn" data-filter="active">Active</button>
     <button class="filter-btn" data-filter="done">Completed</button>
-    <button class="filter-btn" data-filter="high">🔴 High</button>
-    <button class="filter-btn" data-filter="work">💼 Work</button>
+    <button class="filter-btn" data-filter="high"> High</button>
+    <button class="filter-btn" data-filter="work"> Work</button>
     <div class="search-wrap">
       <span class="search-icon">🔍</span>
       <input class="search-input" id="search-input" type="text" placeholder="Search tasks..." />
@@ -639,6 +641,23 @@
 
   // ── INIT ──
   render();
+
+const fetchDataBtn = document.getElementById("fetchData")
+fetchDataBtn.addEventListener("click",() =>{
+  fetch('https://jsonplaceholder.typicode.com/todos')
+      .then(response => response.json())
+      .then(todos => {
+todos.forEach(todo =>{
+  tasks.push({
+    id: todo.id,
+  title:todo.title,
+  completed: todo.completed
+  });
+});
+console.log("Tasks fetched successfully:", tasks);
+      })
+    })
+
 </script>
 </body>
 </html>
