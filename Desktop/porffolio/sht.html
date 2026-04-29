@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shatrah Dollarns - Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        /* Custom Background Styles */
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        /* Hero Section with Background Image */
+        .hero-section {
+            background: linear-gradient(rgba(0, 123, 255, 0.8), rgba(0, 123, 255, 0.8)), 
+                        url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        
+        /* About Section */
+        #about {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+        }
+        
+        #about .container {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 40px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        /* Projects Section */
+        #projects {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+        }
+        
+        #projects .container {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+        
+        #projects .card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        #projects .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+        }
+        
+        /* Contact Section */
+        #contact {
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+        }
+        
+        #contact .container {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+        
+        #contact .form-control {
+            border-radius: 10px;
+            border: 2px solid #e9ecef;
+            transition: border-color 0.3s ease;
+        }
+        
+        #contact .form-control:focus {
+            border-color: #007bff;
+            box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+        }
+        
+        /* Footer */
+        footer {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%) !important;
+        }
+        
+        /* Navbar Enhancement */
+        .navbar {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%) !important;
+            backdrop-filter: blur(10px);
+        }
+        
+        /* Smooth Scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* Animation for sections */
+        section {
+            animation: fadeInUp 0.8s ease-out;
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">Shatrah Dollarns</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section text-white d-flex align-items-center" style="min-height: 100vh; padding-top: 80px;">
+        <div class="container text-center">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h1 class="display-4 fw-bold mb-4">Welcome to My Portfolio</h1>
+                    <p class="lead mb-4">I'm a passionate web developer creating amazing digital experiences with modern technologies and clean code.</p>
+                    <a href="#projects" class="btn btn-light btn-lg">View My Work</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="shatty.jpg" 
+                         alt="Profile Photo" class="img-fluid rounded-circle">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="mb-4">About Me</h2>
+                    <p class="lead">Hello! I'm shatrah , a web developer in making as well as  interested in creating responsive and user-friendly websites. I also do architectural plans and terrazzo finishings.</p>         
+                     <p>When I'm not learning coding, you can find me exploring new technologies or enjoying outdoor activities. I believe in continuous learning and staying up-to-date with the latest web development trends.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2>My Projects</h2>
+                    <p class="lead">Here are some of my recent works</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=350&h=200&q=80" 
+                             class="card-img-top" alt="E-Commerce App">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">E-Commerce Platform</h5>
+                            <p class="card-text">A full-stack e-commerce solution built with React and Node.js, featuring user authentication, payment integration, and admin dashboard.</p>
+                            <a href="#" class="btn btn-primary mt-auto">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&auto=format&fit=crop&w=350&h=200&q=80" 
+                             class="card-img-top" alt="Task Manager">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Task Management App</h5>
+                            <p class="card-text">A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.</p>
+                            <a href="#" class="btn btn-primary mt-auto">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <img src="https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=350&h=200&q=80" 
+                             class="card-img-top" alt="Weather App">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Weather Dashboard</h5>
+                            <p class="card-text">A responsive weather application that provides current conditions and forecasts using external APIs with beautiful data visualizations.</p>
+                            <a href="#" class="btn btn-primary mt-auto">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="text-center mb-5">
+                        <h2>Get In Touch</h2>
+                        <p class="lead">Have a project in mind? Let's work together!</p>
+                    </div>
+                    <form>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="name" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="5" required></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="mb-0">&copy; 2024 Shatrah Dollarns. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
